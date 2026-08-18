@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amani</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">✦ Amani ✦</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#wishlist">Wishlist</a></li>
+            <li><a href="#journal">Journal</a></li>
+        </ul>
+
+    </nav>
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <h1>Amani</h1>
+
+            <p>⋆‧a little place on the internet⋆‧°𓏲ּ𝄢</p>
+
+            <a href="#about" class="button">
+                Step Inside
+            </a>
+
+        </div>
+
+        <div class="polaroid">
+
+            <img src="assets/images/Yoshitomo Nara.jpg" alt="Amani">
+
+            <span>⭒𓇼⭒Moments⭒𓇼⭒</span>
+
+        </div>
+
+    </header>
+
+    <section id="about">
+
+    <div class="about-card">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hi, I'm Amani.
+            I draw things i can not explain, I enjoy collecting little moments, taking photos,
+            creating beautiful things and documenting my life. I belong deeply to myself ₊ ⊹.
+        </p>
+
+    </div>
+
+</section>
+
+    <section id="gallery">
+
+    <h2>Sketchbook & Gallery</h2>
+
+    <p class="gallery-subtitle">
+        little moments I've collected.
+    </p>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="assets/images/you can feel tha coldness.jpeg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="assets/images/My Art.jpeg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="assets/images/funckyy.jpeg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="assets/images/gift.jpeg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="assets/images/cat.jpeg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="assets/images/alula.jpeg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section id="wishlist">
+
+    <h2>Wishlist ✨</h2>
+
+    <p class="wishlist-subtitle">
+        things I want to see, try & experience.
+    </p>
+
+    <div class="wishlist-grid">
+
+        <a href="#places" class="wish-card">
+            <span>✈</span>
+            <h3>Places</h3>
+            <p>Places I dream of visiting.</p>
+        </a>
+
+        <a href="#little-things" class="wish-card">
+            <span>☕</span>
+            <h3>Little Things</h3>
+            <p>Small things I want to try.</p>
+        </a>
+
+        <a href="#books" class="wish-card">
+            <span>📖</span>
+            <h3>Books</h3>
+            <p>Books waiting to be read.</p>
+        </a>
+
+        <a href="#experiences" class="wish-card">
+            <span>♡</span>
+            <h3>Experiences</h3>
+            <p>Moments I want to live.</p>
+        </a>
+
+    </div>
+
+</section>
+<section class="wishlist-details" id="places">
+
+    <h2>Places ✈</h2>
+    <p>Places I want to visit someday...</p>
+
+    <div class="wishlist-items" id="places-items"></div>
+
+    <button class="add-wish" onclick="addWish('places-items')">
+        + Add a place
+    </button>
+
+</section>
+
+
+<section class="wishlist-details" id="little-things">
+
+    <h2>Little Things ☕</h2>
+    <p>Small things I want to try and enjoy...</p>
+
+    <div class="wishlist-items" id="little-things-items"></div>
+
+    <button class="add-wish" onclick="addWish('little-things-items')">
+        + Add something
+    </button>
+
+</section>
+
+
+<section class="wishlist-details" id="books">
+
+    <h2>Books 📖</h2>
+    <p>Books I want to read...</p>
+
+    <div class="wishlist-items" id="books-items"></div>
+
+    <button class="add-wish" onclick="addWish('books-items')">
+        + Add a book
+    </button>
+
+</section>
+
+
+<section class="wishlist-details" id="experiences">
+
+    <h2>Experiences ♡</h2>
+    <p>Things I want to experience...</p>
+
+    <div class="wishlist-items" id="experiences-items"></div>
+
+    <button class="add-wish" onclick="addWish('experiences-items')">
+        + Add an experience
+    </button>
+
+</section>
+<section id="journal">
+
+    <div class="journal-card">
+
+        <span class="journal-date">A little note</span>
+
+        <h2>Dear future me,</h2>
+
+        <p>
+            I hope you're still curious,
+            still dreaming,
+            and still finding beauty
+            in the little things.
+        </p>
+
+        <span class="journal-signature">
+            — Amani ♡
+        </span>
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-logo">✦ Amani ✦</div>
+
+    <p>made with little pieces of me ♡</p>
+
+    <span>© 2026 Amani</span>
+
+</footer>
+
+</body>
+
+</html>
