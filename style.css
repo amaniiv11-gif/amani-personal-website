@@ -15,7 +15,9 @@ body{
 }
 
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 
 nav{
     position:fixed;
@@ -57,7 +59,9 @@ a{
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
 
@@ -86,12 +90,34 @@ a{
 }
 
 
+/* HERO OVERLAY */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.12);
+
+    z-index:0;
+
+}
+
+
+/* HERO TEXT */
+
 .hero-text{
 
     flex:1;
 
     max-width:500px;
 
+    position:relative;
+
+    z-index:1;
 }
 
 
@@ -126,6 +152,7 @@ a{
 
 }
 
+
 .button{
 
     display:inline-block;
@@ -148,6 +175,7 @@ a{
 
 }
 
+
 .button:hover{
 
     background:white;
@@ -155,6 +183,7 @@ a{
     color:#4B4038;
 
 }
+
 
 /* HERO IMAGE */
 
@@ -169,8 +198,9 @@ a{
 }
 
 
-
-/* ALL SECTIONS */
+/* =========================
+   ALL SECTIONS
+========================= */
 
 section{
 
@@ -202,7 +232,9 @@ h2{
 }
 
 
-/* POLAROID */
+/* =========================
+   POLAROID
+========================= */
 
 .polaroid{
 
@@ -220,6 +252,9 @@ h2{
 
     transition:.4s;
 
+    position:relative;
+
+    z-index:1;
 }
 
 
@@ -256,157 +291,16 @@ h2{
 }
 
 
-/* MOBILE */
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-    nav{
-        padding:18px 25px;
-    }
-
-    .logo{
-        font-size:24px;
-    }
-
-    nav ul{
-        gap:12px;
-    }
-
-    nav ul a{
-        font-size:12px;
-    }
-
-
-    /* HERO */
-
-    .hero{
-
-        height:auto;
-
-        min-height:100vh;
-
-        flex-direction:column;
-
-        justify-content:center;
-
-        text-align:center;
-
-        padding:120px 25px 60px;
-
-        gap:40px;
-
-    }
-
-    .hero-text{
-
-        max-width:100%;
-
-    }
-
-    .hero h1{
-
-        font-size:75px;
-
-    }
-
-    .hero p{
-
-        font-size:13px;
-
-        letter-spacing:2px;
-
-    }
-
-    .polaroid{
-
-        width:240px;
-
-        margin-top:10px;
-
-    }
-
-
-    /* GALLERY */
-
-    .gallery-grid{
-
-        grid-template-columns:1fr;
-
-        max-width:400px;
-
-    }
-
-    .gallery-card img{
-
-        height:320px;
-
-    }
-
-
-    /* WISHLIST */
-
-    .wishlist-grid{
-
-        grid-template-columns:1fr 1fr;
-
-        gap:15px;
-
-    }
-
-    .wish-card{
-
-        padding:30px 15px;
-
-    }
-
-
-    /* JOURNAL */
-
-    .journal-card{
-
-        padding:60px 30px;
-
-    }
-
-    .journal-card h2{
-
-        font-size:38px;
-
-    }
-
-    .journal-card p{
-
-        font-size:22px;
-
-    }
-
-
-    /* SECTIONS */
-
-    section{
-
-        padding:100px 25px;
-
-        scroll-margin-top:90px;
-
-    }
-
-    h2{
-
-        font-size:45px;
-
-    }
-
-}
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 
 #about{
 
     background:#F4EFE8;
 
 }
+
 
 .about-card{
 
@@ -423,7 +317,7 @@ h2{
         rgba(255,253,249,.72),
         rgba(255,253,249,.72)
     ),
-   url("yoshitomo nara exhibit at lacma.jpg");
+    url("yoshitomo nara exhibit at lacma.jpg");
 
     background-size:cover;
 
@@ -435,11 +329,13 @@ h2{
 
 }
 
+
 .about-card h2{
 
     margin-bottom:25px;
 
 }
+
 
 .about-card p{
 
@@ -450,13 +346,18 @@ h2{
     color:#5f534b;
 
 }
-/* GALLERY */
+
+
+/* =========================
+   GALLERY
+========================= */
 
 #gallery{
 
     background:#f8f5ef;
 
 }
+
 
 .gallery-subtitle{
 
@@ -469,6 +370,7 @@ h2{
     color:#8b8076;
 
 }
+
 
 .gallery-grid{
 
@@ -484,6 +386,7 @@ h2{
 
 }
 
+
 .gallery-card{
 
     overflow:hidden;
@@ -496,11 +399,13 @@ h2{
 
 }
 
+
 .gallery-card:hover{
 
     transform:translateY(-8px);
 
 }
+
 
 .gallery-card img{
 
@@ -516,18 +421,24 @@ h2{
 
 }
 
+
 .gallery-card:hover img{
 
     transform:scale(1.08);
 
 }
-/* WISHLIST */
+
+
+/* =========================
+   WISHLIST
+========================= */
 
 #wishlist{
 
     background:#F4EFE8;
 
 }
+
 
 .wishlist-subtitle{
 
@@ -540,6 +451,7 @@ h2{
     color:#8b8076;
 
 }
+
 
 .wishlist-grid{
 
@@ -555,6 +467,7 @@ h2{
 
 }
 
+
 .wish-card{
 
     background:#fffdf9;
@@ -569,7 +482,12 @@ h2{
 
     transition:.35s;
 
+    text-decoration:none;
+
+    color:#4B4038;
+
 }
+
 
 .wish-card:hover{
 
@@ -577,11 +495,13 @@ h2{
 
 }
 
+
 .wish-card span{
 
     font-size:32px;
 
 }
+
 
 .wish-card h3{
 
@@ -595,6 +515,7 @@ h2{
 
 }
 
+
 .wish-card p{
 
     color:#7b7068;
@@ -602,13 +523,136 @@ h2{
     line-height:1.6;
 
 }
-/* JOURNAL */
+
+
+/* =========================
+   WISHLIST DETAILS
+========================= */
+
+.wishlist-details{
+
+    min-height:60vh;
+
+    background:#fffdf9;
+
+}
+
+
+.wishlist-details h2{
+
+    margin-bottom:20px;
+
+}
+
+
+.wishlist-details p{
+
+    color:#7b7068;
+
+    font-size:18px;
+
+}
+
+
+.wishlist-items{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin:40px 0;
+
+    max-width:800px;
+
+}
+
+
+.wishlist-item{
+
+    min-width:150px;
+
+    padding:25px;
+
+    background:#F4EFE8;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+
+.wishlist-item:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+.wishlist-item span{
+
+    font-size:35px;
+
+}
+
+
+.wishlist-item p{
+
+    margin-top:10px;
+
+    color:#5F534B;
+
+}
+
+
+.add-wish{
+
+    padding:13px 28px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#4B4038;
+
+    color:white;
+
+    font-family:'Manrope',sans-serif;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.add-wish:hover{
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+
+}
+
+
+/* =========================
+   JOURNAL
+========================= */
 
 #journal{
 
     background:#F8F5EF;
 
 }
+
 
 .journal-card{
 
@@ -627,6 +671,7 @@ h2{
     position:relative;
 
 }
+
 
 .journal-card::before{
 
@@ -652,6 +697,7 @@ h2{
 
 }
 
+
 .journal-date{
 
     display:block;
@@ -668,6 +714,7 @@ h2{
 
 }
 
+
 .journal-card h2{
 
     font-size:48px;
@@ -675,6 +722,7 @@ h2{
     margin-bottom:25px;
 
 }
+
 
 .journal-card p{
 
@@ -687,6 +735,7 @@ h2{
     color:#62564d;
 
 }
+
 
 .journal-signature{
 
@@ -701,7 +750,11 @@ h2{
     font-size:24px;
 
 }
-/* FOOTER */
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
 
@@ -715,6 +768,7 @@ footer{
 
 }
 
+
 .footer-logo{
 
     font-family:'Forum',serif;
@@ -724,6 +778,7 @@ footer{
     margin-bottom:15px;
 
 }
+
 
 footer p{
 
@@ -735,6 +790,7 @@ footer p{
 
 }
 
+
 footer span{
 
     font-size:11px;
@@ -744,135 +800,418 @@ footer span{
     color:#9b8c80;
 
 }
-.wish-card{
 
-    text-decoration:none;
 
-    color:#4B4038;
+/* =========================
+   MOBILE
+========================= */
 
-}
+@media(max-width:900px){
 
-.wishlist-details{
+    /* NAV */
 
-    min-height:60vh;
+    nav{
 
-    background:#fffdf9;
+        padding:18px 20px;
 
-}
+    }
 
-.wishlist-details h2{
 
-    margin-bottom:20px;
+    .logo{
 
-}
+        font-size:24px;
 
-.wishlist-details p{
+    }
 
-    color:#7b7068;
 
-    font-size:18px;
+    nav ul{
 
-}
-.wishlist-items{
+        gap:12px;
 
-    display:flex;
+    }
 
-    flex-wrap:wrap;
 
-    justify-content:center;
+    nav ul a{
 
-    gap:20px;
+        font-size:11px;
 
-    margin:40px 0;
+    }
 
-    max-width:800px;
 
-}
+    /* HERO */
 
-.wishlist-item{
+    .hero{
 
-    min-width:150px;
+        height:auto;
 
-    padding:25px;
+        min-height:100svh;
 
-    background:#F4EFE8;
+        flex-direction:column;
 
-    border-radius:18px;
+        justify-content:center;
 
-    text-align:center;
+        align-items:center;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
+        text-align:center;
 
-    transition:.3s;
+        padding:120px 20px 50px;
 
-}
+        gap:35px;
 
-.wishlist-item:hover{
+        background-image:url("Download (4).jpg");
 
-    transform:translateY(-5px);
+        background-size:cover;
 
-}
+        background-position:center center;
 
-.wishlist-item span{
+        background-repeat:no-repeat;
 
-    font-size:35px;
+    }
 
-}
 
-.wishlist-item p{
+    .hero-text{
 
-    margin-top:10px;
+        width:100%;
 
-    color:#5F534B;
+        max-width:500px;
 
-}
+    }
 
-.add-wish{
 
-    padding:13px 28px;
+    .hero h1{
 
-    border:none;
+        font-size:70px;
 
-    border-radius:999px;
+        line-height:1;
 
-    background:#4B4038;
+    }
 
-    color:white;
 
-    font-family:'Manrope',sans-serif;
+    .hero p{
 
-    cursor:pointer;
+        font-size:11px;
 
-    transition:.3s;
+        letter-spacing:2px;
 
-}
+        margin:20px 0 30px;
 
-.add-wish:hover{
+    }
 
-    transform:translateY(-3px);
 
-    opacity:.9;
+    .button{
 
-}
-.hero::before{
+        padding:13px 30px;
 
-    content:"";
+        font-size:13px;
 
-    position:absolute;
+    }
 
-    inset:0;
 
-    background:rgba(0,0,0,.12);
+    /* MOBILE POLAROID */
 
-    z-index:0;
+    .hero .polaroid{
 
-}
+        width:190px;
 
-.hero-text,
-.hero .polaroid{
+        margin:0;
 
-    position:relative;
+        padding:10px 10px 35px;
 
-    z-index:1;
+        transform:rotate(-4deg);
+
+    }
+
+
+    .hero .polaroid span{
+
+        font-size:17px;
+
+        margin-top:12px;
+
+    }
+
+
+    /* SECTIONS */
+
+    section{
+
+        min-height:auto;
+
+        padding:90px 20px;
+
+        scroll-margin-top:80px;
+
+    }
+
+
+    h2{
+
+        font-size:45px;
+
+        text-align:center;
+
+    }
+
+
+    /* ABOUT */
+
+    .about-card{
+
+        width:100%;
+
+        max-width:100%;
+
+        padding:40px 25px;
+
+        border-radius:20px;
+
+    }
+
+
+    .about-card p{
+
+        font-size:16px;
+
+        line-height:1.9;
+
+    }
+
+
+    /* GALLERY */
+
+    #gallery{
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+
+    .gallery-subtitle{
+
+        text-align:center;
+
+        font-size:12px;
+
+        letter-spacing:2px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    .gallery-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:12px;
+
+        width:100%;
+
+    }
+
+
+    .gallery-card{
+
+        border-radius:14px;
+
+    }
+
+
+    .gallery-card img{
+
+        width:100%;
+
+        height:220px;
+
+        object-fit:cover;
+
+    }
+
+
+    /* WISHLIST */
+
+    #wishlist{
+
+        padding-left:20px;
+
+        padding-right:20px;
+
+    }
+
+
+    .wishlist-subtitle{
+
+        text-align:center;
+
+        font-size:12px;
+
+        margin-bottom:35px;
+
+    }
+
+
+    .wishlist-grid{
+
+        display:grid;
+
+        grid-template-columns:1fr 1fr;
+
+        gap:12px;
+
+        width:100%;
+
+    }
+
+
+    .wish-card{
+
+        min-height:180px;
+
+        padding:30px 15px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        border-radius:18px;
+
+    }
+
+
+    .wish-card span{
+
+        font-size:28px;
+
+    }
+
+
+    .wish-card h3{
+
+        font-size:24px;
+
+        margin:12px 0 8px;
+
+    }
+
+
+    .wish-card p{
+
+        font-size:12px;
+
+        line-height:1.5;
+
+    }
+
+
+    /* WISHLIST DETAILS */
+
+    .wishlist-details{
+
+        min-height:auto;
+
+        padding:80px 20px;
+
+        text-align:center;
+
+    }
+
+
+    .wishlist-details h2{
+
+        font-size:42px;
+
+    }
+
+
+    .wishlist-details p{
+
+        font-size:15px;
+
+    }
+
+
+    .wishlist-items{
+
+        width:100%;
+
+        gap:12px;
+
+        margin:30px 0;
+
+    }
+
+
+    .wishlist-item{
+
+        min-width:130px;
+
+        flex:1 1 40%;
+
+        padding:20px 12px;
+
+    }
+
+
+    .wishlist-item span{
+
+        font-size:28px;
+
+    }
+
+
+    .wishlist-item p{
+
+        font-size:13px;
+
+    }
+
+
+    /* JOURNAL */
+
+    .journal-card{
+
+        width:100%;
+
+        padding:55px 25px;
+
+    }
+
+
+    .journal-card h2{
+
+        font-size:38px;
+
+    }
+
+
+    .journal-card p{
+
+        font-size:21px;
+
+        line-height:1.7;
+
+    }
+
+
+    /* FOOTER */
+
+    footer{
+
+        padding:50px 20px;
+
+    }
+
+
+    .footer-logo{
+
+        font-size:28px;
+
+    }
 
 }
