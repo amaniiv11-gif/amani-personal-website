@@ -71,7 +71,7 @@ a{
     padding:0 120px;
     gap:80px;
 
-    background-image:url("Download (4).jpg");
+    background-image:url("./hero.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -708,342 +708,216 @@ footer span{
 
 @media(max-width:900px){
 
-    /* NAV */
-
     nav{
-
         padding:18px 20px;
     }
 
     .logo{
-
         font-size:24px;
     }
 
     nav ul{
-
         gap:12px;
     }
 
     nav ul a{
-
         font-size:11px;
     }
 
-
-    /* HERO */
-
     .hero{
-
-        height:auto;
-
+        height:100svh;
         min-height:100svh;
 
         flex-direction:column;
-
         justify-content:center;
-
         align-items:center;
 
         text-align:center;
 
         padding:120px 20px 50px;
-
         gap:35px;
 
-        background-image:url("Download (4).jpg");
-
+        background-image:url("./hero.jpg");
         background-size:cover;
-
         background-position:center center;
-
         background-repeat:no-repeat;
     }
 
     .hero-text{
-
         width:100%;
-
         max-width:500px;
     }
 
     .hero h1{
-
         font-size:70px;
-
         line-height:1;
     }
 
     .hero p{
-
         font-size:11px;
-
         letter-spacing:2px;
-
         margin:20px 0 30px;
     }
 
     .button{
-
         padding:13px 30px;
-
         font-size:13px;
     }
 
-
-    /* POLAROID */
-
     .hero .polaroid{
-
         width:190px;
-
         margin:0;
-
         padding:10px 10px 35px;
-
         transform:rotate(-4deg);
     }
 
     .hero .polaroid span{
-
         font-size:17px;
-
         margin-top:12px;
     }
 
-
-    /* SECTIONS */
-
     section{
-
         min-height:auto;
-
         padding:90px 20px;
-
         scroll-margin-top:80px;
     }
 
     h2{
-
         font-size:45px;
-
         text-align:center;
     }
 
-
-    /* ABOUT */
-
     .about-card{
-
         width:100%;
-
         max-width:100%;
-
         padding:40px 25px;
-
         border-radius:20px;
     }
 
     .about-card p{
-
         font-size:16px;
-
         line-height:1.9;
     }
 
-
-    /* GALLERY */
-
-    #gallery{
-
-        padding-left:20px;
-
-        padding-right:20px;
-    }
-
     .gallery-subtitle{
-
         text-align:center;
-
         font-size:12px;
-
         letter-spacing:2px;
-
         margin-bottom:35px;
     }
 
     .gallery-grid{
-
         grid-template-columns:1fr 1fr;
-
         gap:12px;
-
         width:100%;
     }
 
     .gallery-card{
-
         border-radius:14px;
     }
 
     .gallery-card img{
-
         width:100%;
-
         height:220px;
-
         object-fit:cover;
     }
 
-
-    /* WISHLIST */
-
     #wishlist{
-
         padding-left:20px;
-
         padding-right:20px;
     }
 
     .wishlist-subtitle{
-
         text-align:center;
-
         font-size:12px;
-
         margin-bottom:35px;
     }
 
     .wishlist-grid{
-
-        display:grid;
-
         grid-template-columns:1fr 1fr;
-
         gap:12px;
-
         width:100%;
     }
 
     .wish-card{
-
         min-height:180px;
-
         padding:30px 15px;
 
         display:flex;
-
         flex-direction:column;
-
         justify-content:center;
-
         align-items:center;
 
         border-radius:18px;
     }
 
     .wish-card span{
-
         font-size:28px;
     }
 
     .wish-card h3{
-
         font-size:24px;
-
         margin:12px 0 8px;
     }
 
     .wish-card p{
-
         font-size:12px;
-
         line-height:1.5;
     }
 
-
-    /* WISHLIST DETAILS */
-
     .wishlist-details{
-
         min-height:auto;
-
         padding:80px 20px;
-
         text-align:center;
     }
 
     .wishlist-details h2{
-
         font-size:42px;
     }
 
     .wishlist-details p{
-
         font-size:15px;
     }
 
     .wishlist-items{
-
         width:100%;
-
         gap:12px;
-
         margin:30px 0;
     }
 
     .wishlist-item{
-
         min-width:130px;
-
         flex:1 1 40%;
-
         padding:20px 12px;
     }
 
     .wishlist-item span{
-
         font-size:28px;
     }
 
     .wishlist-item p{
-
         font-size:13px;
     }
 
-
-    /* JOURNAL */
-
     .journal-card{
-
         width:100%;
-
         padding:55px 25px;
     }
 
     .journal-card h2{
-
         font-size:38px;
     }
 
     .journal-card p{
-
         font-size:21px;
-
         line-height:1.7;
     }
 
-
-    /* FOOTER */
-
     footer{
-
         padding:50px 20px;
     }
 
     .footer-logo{
-
         font-size:28px;
     }
-
 }
